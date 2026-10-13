@@ -25,7 +25,7 @@ de APIs utilizando Python e Flask.
 ## Objetivos
 
 - [x] Cadastro de times
-- [ ] Cadastro de jogadores
+- [x] Cadastro de jogadores
 - [ ] Cadastro de partidas
 - [ ] Registro de resultados
 - [ ] Classificação automática
@@ -39,7 +39,7 @@ de APIs utilizando Python e Flask.
 ## Progresso
 
 - [x] V1 — Cadastro e listagem de times
-- [ ] V1 — Cadastro de jogadores
+- [x] V1 — Cadastro de jogadores
 - [ ] V1 — Cadastro de partidas
 - [ ] V1 — Registro de resultados
 - [ ] V1 — Classificação do campeonato

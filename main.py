@@ -1,5 +1,5 @@
-from times import cadastrar_times, listar_times, buscar_time, remover_time
-from jogadores import cadastrar_jogador
+from times import cadastrar_time, listar_times, buscar_time, remover_time
+from jogadores import cadastrar_jogador, listar_jogadores
 
 times = []
 
@@ -17,7 +17,7 @@ while True:
 
     if opcao == "1":
         cadastrar = input("Digite o nome do time que deseja cadastrar: ")
-        cadastrar_times(times, cadastrar)
+        cadastrar_time(times, cadastrar)
 
     elif opcao == "2":
         listar_times(times)
@@ -29,7 +29,7 @@ while True:
             print(f"Time encontrado! O time '{time_encontrado['nome']}' está cadastrado.")
         else:
             print(f"Time não encontrado! O time '{buscar}' não está cadastrado.")
-
+    
     elif opcao == "4":
         remover = input("Digite o nome do time que deseja remover: ")
         remover_time(times, remover)
@@ -43,6 +43,20 @@ while True:
         else:
             print(f"O time '{time_desejado}' não está cadastrado")
 
+    elif opcao == "6":
+        if not times:
+            print("Não existe nenhum time cadastrado")
+        else:
+            print("Times cadastrados:")
+            listar_times(times)
+            time_desejado = input("De qual time você deseja listar os jogadores: ")
+
+            if buscar_time(times, time_desejado):
+                listar_jogadores(times, time_desejado)
+            else:
+                print(f"O time '{time_desejado}' não está cadastrado")
+
+    
     elif opcao == "0":
         print("Saindo...")
         break

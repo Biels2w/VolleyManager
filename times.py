@@ -1,4 +1,4 @@
-def cadastrar_times(times, nome):
+def cadastrar_time(times, nome):
     nome = nome.strip()
 
     if nome == "":
@@ -42,6 +42,5 @@ def remover_time(times, nome):
         print(f"O time '{nome}' foi removido.")
     else:
         print(f"Time não encontrado! O time '{nome}' não está cadastrado. ")
-        return
 
 #================================================================================================
